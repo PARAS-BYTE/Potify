@@ -2,6 +2,12 @@
     margin-left: 250px;
     margin-top: 70px;
 }
+.somie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
 @media (max-width:758px) {
     .some{
         margin-left: 0;

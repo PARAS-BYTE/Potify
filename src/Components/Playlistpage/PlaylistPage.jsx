@@ -3,7 +3,7 @@ import styles from './PlaylistPage.module.css'
 import HomeCard from '../Home/HomeCard/Homecard'
 
 import { useLocation } from 'react-router-dom'
-const PlaylistPage = () => {
+const PlaylistPage = ({some}) => {
     const {state}=useLocation()
     const data=state.data
   return (

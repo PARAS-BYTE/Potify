@@ -39,6 +39,7 @@ const Indexi = () => {
                         <Route path='/home' element={<Home />}></Route>
                         <Route path='/detected' element={<Detected/>}></Route>
                         <Route path='/mood' element={<MoodDetector />}></Route>
+                        <Route path='' element={<Home/>}></Route>
                     </Routes>
                     <Player audioSrc={"https://aac.saavncdn.com/183/b74301ad9d1adfcfb4ec2fc325547dad_320.mp4"} />
 

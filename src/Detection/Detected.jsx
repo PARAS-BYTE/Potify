@@ -20,7 +20,7 @@ const Detected = () => {
         }else if(taste=='angry'){
             setgen("angry")
         }else if(taste=='happy'){
-            setgen("chill")
+            setgen("happy")
         }else{
             setgen("n")
         }
@@ -29,7 +29,10 @@ const Detected = () => {
 
   return (
     <>
+    <h1  >Moode : {state.searchQuery}</h1>
+        {<Searchpage data={state.searchQuery}/>} 
     <div className={styles.some}>
+    <h2 style={{fontSize:"2rem" ,marginLeft:"1.1rem",marginTop :"1.1rem" }} >More Featured</h2>
         <div className={styles.somie}>
 
         {AllGeneres.filter((t)=>t.genre.includes(gen)).map((t,ind)=><HomeCard key={ind} data={t}/>)}
@@ -37,9 +40,7 @@ const Detected = () => {
         
         </div>
 
-    <h2 style={{fontSize:"2rem" ,marginLeft:"1.1rem",marginTop :"1.1rem" }} >More Featured</h2>
     </div>
-        {<Searchpage data={state.searchQuery}/>} 
     </>
   )
 }

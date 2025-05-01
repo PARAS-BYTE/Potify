@@ -6,14 +6,23 @@ import Punjabidata from '../Saved/Punjabidata'
 import Homedata from '../Saved/Homedata'
 import PlaylistCard from './PlaylistCard'
 
-const MyPlaylist = () => {
-    let ver=[Saddata,Punjabidata,Homedata]
+const MyPlaylist = ({some,playlistname}) => {
+    let ver;
+    if(some){
+        ver=[some]
+    } else{
+
+         ver=[Saddata,Punjabidata,Homedata]
+    }
+
   return (
     <>
 
    
     <div className={styles.some}>
-        <div className={styles.somie}>
+        <div className={styles.somie} 
+        
+        >
 
         {ver.map((t,ind)=><PlaylistCard  key ={ind}data={t} ind={ind} />)}
         </div>

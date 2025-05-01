@@ -73,17 +73,17 @@ export default function Navbar() {
             className={`navbar-item ${activeItem === 'create' ? 'active' : ''}`}
             onClick={() => handleItemClick('create')}
           >
-            <span className="navbar-icon">➕</span>
-            <span className="navbar-text">Create Playlist</span>
+            <span className="navbar-icon">📜</span>
+            <span className="navbar-text">History</span>
           </div>
           
-          <div 
+          {/* <div 
             className={`navbar-item ${activeItem === 'browse' ? 'active' : ''}`}
             onClick={() => handleItemClick('browse')}
           >
             <span className="navbar-icon">🔍</span>
             <span className="navbar-text">Browse Songs</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

@@ -7,11 +7,18 @@
 }
 .somei{
     display: flex;
-    gap: 15px;
-    
     justify-content: center;
-    /* border: 1px solid black; */
     flex-wrap: wrap;
+    /* border: 1px solid black; */
+    gap: 30px;
+}
+
+.someis{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* border: 1px solid black; */
+    gap: 30px;
 }
 @media (max-width:758px) {
     .some{

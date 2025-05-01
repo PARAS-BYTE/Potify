@@ -13,6 +13,18 @@ import AllGeneres from '../AllGeneres/AllGeneres';
 
 // Bottom Bar Music Player Component
 export default function Player() {
+
+
+
+
+
+const {addfav}=useContext(Musiccontext)
+
+
+
+
+
+
   // State management
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -38,6 +50,7 @@ useEffect(()=>{
       });
       setIsPlaying(true);
     }
+    setIsFavorite(false)
   }, [data]);
 
   const track = {
@@ -146,7 +159,7 @@ useEffect(()=>{
         // addfav(data)
     // }
     // console.log(addfav)
-    
+    addfav(data)
 
     // Here is the favourite tooggle
     setIsFavorite(!isFavorite);
