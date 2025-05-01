@@ -1,0 +1,20 @@
+.some{
+    margin-left: 250px;
+    margin-top: 70px;
+    /* width: 900px; */
+    
+   
+}
+.somei{
+    display: flex;
+    gap: 15px;
+    
+    justify-content: center;
+    /* border: 1px solid black; */
+    flex-wrap: wrap;
+}
+@media (max-width:758px) {
+    .some{
+        margin-left: 0;
+    }
+}

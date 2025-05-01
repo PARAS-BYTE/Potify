@@ -1,0 +1,9 @@
+.some{
+    margin-left: 250px;
+    margin-top: 70px;
+}
+@media (max-width:758px) {
+    .some{
+        margin-left: 0;
+    }
+}
