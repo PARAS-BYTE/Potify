@@ -13,8 +13,10 @@ const PlaylistPage = ({some}) => {
             <div className={styles.somie}>
                     {data.map((t,ind)=><HomeCard key={ind} data={t} />)}
             </div>
+      {/* <button   >Delete </button> */}
         </div>
-    </>
+        
+    </> 
   )
 }
 

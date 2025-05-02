@@ -20,11 +20,14 @@ const Favourite = () => {
         {fav.map((t,ind)=><HomeCard  key ={ind}data={t} ind={ind} />)}
         </div>
 
+
+        {fav.length?
         <button onClick={()=>{
-            clearfav()
+          clearfav()
         }}
         style={{backgroundColor:"rgb(0,0,0.1)",padding:"0.8em 1em",fontSize:"16px",borderRadius:"30px",color:"white",marginTop:"20px"}}> Delete Collection</button>
-    </div>
+      :""}
+        </div>
     </>
   )
 }

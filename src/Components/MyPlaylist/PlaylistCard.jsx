@@ -14,8 +14,9 @@ function clickhandler(){
      style={{paddingLeft:"50px"}}
     >
     <div className="text-lg font-semibold">{`Playlist ${ind+1}` }</div>
-    <img src={data[3].img} alt="playlist" className="w-24 h-24 object-cover rounded-lg" />
+    <img src={ data[0]? data[0]['img']:""} alt="playlist" className="w-24 h-24 object-cover rounded-lg" />
   </div>
+  
     </div>
   )
 }

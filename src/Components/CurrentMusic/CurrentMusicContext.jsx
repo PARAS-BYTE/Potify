@@ -33,6 +33,9 @@ const CurrentMusicContext = ({children}) => {
             const data=JSON.parse(localStorage.getItem("fav"))
             setfav(data)
         }
+        if(localStorage.getItem("playlist")){
+            const data=JSON.parse(localStorage.getItem("playlist"))
+        }
     },[])
     const addprev=(data)=>{
 
@@ -73,11 +76,29 @@ const CurrentMusicContext = ({children}) => {
         setfav(newdata);
         localStorage.setItem("fav", JSON.stringify(newdata));
       };
+    const [playlist, setplaylist] = useState([]);
+      const addlist=(data)=>{
+        const exists = playlist.some(item => item.img === data.img);
       
+        if (exists) {
+        
+          return;
+        }
+      
+        // Add new item and update state and localStorage
+        const newdata = [...playlist, data];
+        setplaylist(newdata);
+        localStorage.setItem("playlist", JSON.stringify(newdata));
+        console.log(playlist)
+      }
+      const deletelist=()=>{
+            setplaylist([])
+      }
+
   return (
     <>
 
-        <Musiccontext.Provider value={{data,changedata,fav,addfav,prev,addprev,clearfav,clearprev}}>
+        <Musiccontext.Provider value={{data,changedata,fav,addfav,prev,addprev,clearfav,clearprev,playlist,addlist,deletelist}}>
             {children}
         </Musiccontext.Provider>
 

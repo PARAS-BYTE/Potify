@@ -21,7 +21,7 @@ const Home = () => {
         <MyPlaylist some={arjit} />
 
 
-    <h1 style={{fontSize:"1.5em",marginLeft:"30px",fontWeight:"600"}}>Suggest Music</h1>
+    {/* <h1 style={{fontSize:"1.5em",marginLeft:"30px",fontWeight:"600"}}>Suggest Music</h1> */}
 
     <h1 style={{fontSize:"1.5em",marginLeft:"30px",fontWeight:"600"}}>Featured</h1>
     <div className={styles.somei}>

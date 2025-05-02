@@ -1,7 +1,7 @@
 
 
 import { useState, useRef, useEffect, useContext } from 'react';
-import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX, Repeat, Shuffle, Heart } from 'lucide-react';
+import { Play, Pause, SkipBack, SkipForward, Volume2, VolumeX, Repeat, Shuffle, Heart, Pointer } from 'lucide-react';
 import { Musiccontext } from '../CurrentMusic/CurrentMusicContext';
 import { FavouriteContext } from '../../LocalStorage/LocalStorage';
 import AllGeneres from '../AllGeneres/AllGeneres';
@@ -92,7 +92,9 @@ useEffect(()=>{
       setCurrentTime(audioRef.current.currentTime);
     }
   };
-  
+  window.addEventListener("load",()=>{
+    audioRef.current.pause()
+  })
   // Handle seek
   const handleSeek = (e) => {
     const seekTime = parseFloat(e.target.value);
@@ -165,6 +167,14 @@ useEffect(()=>{
     setIsFavorite(!isFavorite);
   };
   
+
+
+
+
+const {addlist}=useContext(Musiccontext);
+
+
+
   // Skip to next track
   const nextTrack = () => {
     if (audioRef.current) {
@@ -341,9 +351,26 @@ useEffect(()=>{
             <span className="text-xs text-gray-400 w-8">{formatTime(duration)}</span>
           </div>
         </div>
+
+
+
+
+
+       
         
         {/* Volume control and favorite button - right */}
         <div className="flex items-center justify-end w-1/4 space-x-2">
+        <div className="flex items-center justify-end w-1/4 space-x-2">
+          <button 
+            onClick={()=>{
+              addlist(data)
+            }}
+            className={`'text-red-500' : 'text-gray-400'} hover:text-red-500 transition-colors`}
+           style={{marginRight:"20px",cursor: "pointer"}}
+          >
+            ➕
+          </button>
+            </div>
           <button 
             onClick={toggleFavorite}
             className={`p-2 ${isFavorite ? 'text-red-500' : 'text-gray-400'} hover:text-red-500 transition-colors`}

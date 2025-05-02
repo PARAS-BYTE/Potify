@@ -13,7 +13,11 @@ const CreatePlaylist = () => {
             {prev.map((t,ind)=><HomeCard  key={ind} data={t}/>)}
 
         </div>
-        <button onClick={clearprev}  style={{backgroundColor:"rgb(0,0,0.1)",padding:"0.8em 1em",fontSize:"16px",borderRadius:"30px",color:"white",marginTop:"50px"}} >Delete History</button>
+        {
+          prev.length ?
+          <button onClick={clearprev}  style={{backgroundColor:"rgb(0,0,0.1)",padding:"0.8em 1em",fontSize:"16px",borderRadius:"30px",color:"white",marginTop:"50px"}} >Delete History</button>
+           :""
+        }
    </div>
     </>
   )
