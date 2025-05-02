@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './PlaylistPage.module.css'
+import styles from './Playlistpage.module.css'
 import HomeCard from '../Home/HomeCard/Homecard'
 
 import { useLocation } from 'react-router-dom'
