@@ -29,9 +29,8 @@ const Detected = () => {
 
   return (
     <>
-    <h1  >Moode : {state.searchQuery}</h1>
-        {<Searchpage data={state.searchQuery}/>} 
     <div className={styles.some}>
+    <h1  >Mood : {state.searchQuery}</h1>
     <h2 style={{fontSize:"2rem" ,marginLeft:"1.1rem",marginTop :"1.1rem" }} >More Featured</h2>
         <div className={styles.somie}>
 
@@ -41,6 +40,7 @@ const Detected = () => {
         </div>
 
     </div>
+        {<Searchpage data={state.searchQuery}/>} 
     </>
   )
 }
