@@ -20,9 +20,7 @@ const MyPlaylist = ({some,playlistname}) => {
 
    
     <div className={styles.some}>
-        <div className={styles.somie} 
-        
-        >
+        <div className={styles.somie} >
 
         {ver.map((t,ind)=><PlaylistCard  key ={ind}data={t} ind={ind} />)}
         </div>

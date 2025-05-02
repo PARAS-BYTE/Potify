@@ -59,13 +59,12 @@ const CurrentMusicContext = ({children}) => {
         setprev([])
     }
     const addfav = (data) => {
-        console.log(data);
       
         // Check if already exists in fav (assumes data has a unique 'id' field)
         const exists = fav.some(item => item.img === data.img);
       
         if (exists) {
-          console.log("Already exists");
+        
           return;
         }
       
@@ -73,11 +72,7 @@ const CurrentMusicContext = ({children}) => {
         const newdata = [...fav, data];
         setfav(newdata);
         localStorage.setItem("fav", JSON.stringify(newdata));
-        console.log(prev)
       };
-      
-      
-      
       
   return (
     <>

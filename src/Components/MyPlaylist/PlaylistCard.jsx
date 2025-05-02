@@ -9,7 +9,7 @@ function clickhandler(){
 }
 
   return (
-    <div onClick={clickhandler} style={{display:"flex",marginLeft:"50px"}}>
+    <div onClick={clickhandler} style={{display:"flex",marginLeft:"80px"}}>
     <div className="w-full max-w-3xl mx-auto bg-[#111827] text-white flex justify-between items-center rounded-xl shadow-md p-5 mb-4" 
      style={{paddingLeft:"50px"}}
     >

@@ -31,7 +31,7 @@ const MoodDetector = () => {
       return combinedMessage;
     });
     
-    console.log(message);
+    // console.log(message);
   };
 
   useEffect(()=>{
@@ -292,7 +292,7 @@ const MoodDetector = () => {
     // setis(true)
     stopMoodDetection()
     let searchQuery=mood;
-    console.log("search Query ",searchQuery)
+    // console.log("search Query ",searchQuery)
     navigate("/detected",{state : {searchQuery}})
     return (
         <> 

@@ -23,7 +23,7 @@ const Favourite = () => {
         <button onClick={()=>{
             clearfav()
         }}
-        style={{backgroundColor:"rgb(0,0,0.1)",padding:"0.8em 1em",fontSize:"16px",borderRadius:"30px",color:"white"}}> Delete</button>
+        style={{backgroundColor:"rgb(0,0,0.1)",padding:"0.8em 1em",fontSize:"16px",borderRadius:"30px",color:"white",marginTop:"20px"}}> Delete Collection</button>
     </div>
     </>
   )

@@ -187,7 +187,7 @@ useEffect(()=>{
   const prevTrack = () => {
     //   data=gens[8]
     // console.log(gens[5])
-    console.log(numbers)
+    // console.log(numbers)
     setdata(gens[numbers])
     if(numbers>1){
         setnumbers(numbers-1)

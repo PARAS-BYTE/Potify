@@ -48,7 +48,7 @@ const Header = ({ activeNavItem, setActiveNavItem }) => {
           className="premium-button"
           onClick={() => console.log('Premium button clicked')}
         >
-          Buy Premium
+          Potify
         </button>
       </div>
     </header>
