@@ -31,12 +31,12 @@ const Homedata= [
         "img": "https://c.saavncdn.com/561/Wa-Speeny-Kontary-Sok-Di-Lewani-Kra-Pashto-2018-20180108143714-500x500.jpg",
         "artist": "Laila Khan"
       },
-      {
-        "name": "kamli",
-        "url": "http://aac.saavncdn.com/183/b74301ad9d1adfcfb4ec2fc325547dad_12.mp4",
-        "img": "https://c.saavncdn.com/artists/Sunidhi_Chauhan_004_20241118064943_50x50.jpg",
-        "artistname": ""
-      },
+      // {
+      //   "name": "kamli",
+      //   "url": "http://aac.saavncdn.com/183/b74301ad9d1adfcfb4ec2fc325547dad_12.mp4",
+      //   "img": "https://c.saavncdn.com/artists/Sunidhi_Chauhan_004_20241118064943_50x50.jpg",
+      //   "artistname": ""
+      // },
     ]
   
 

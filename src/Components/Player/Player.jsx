@@ -191,7 +191,12 @@ const {addlist}=useContext(Musiccontext);
       setIsPlaying(true);
     }
   };
+
+
+  
   let gens=AllGeneres
+
+  
 //   console.log(gens)
   // Skip to previous track
   const prevTrack = () => {
@@ -239,7 +244,10 @@ const {addlist}=useContext(Musiccontext);
       });
       audio.addEventListener('ended', () => {
         if (!isRepeat) {
-          setIsPlaying(false);
+          nextTrack()
+          // setIsPlaying(false);
+        }else{
+          audio.play()
         }
       });
       
